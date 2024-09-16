@@ -21,7 +21,7 @@ body{
     header{
         position: relative;
         background:$bluecolor;
-        padding: 45px 0;
+        padding: 45px 0 55px 0;
         .logo{
              position: absolute;
              left: 0;
@@ -83,26 +83,306 @@ body{
 
     .herobanner{
         background: $bluecolor;
+        overflow: hidden;
+        padding-bottom: 50px;
+        position: relative;
         .banner-wrpr{
-            position: relative;
+            // position: relative;
             &:after{
                 content: '';
                 position:absolute;
                 top: 0;
-                right: 0;
-                width: 600px;
-                height: 600px;
+                right:0px;
+                width: 800px;
+                height:100%;
                 background: url(../images/banner-bg-gredient.png) no-repeat;
-                background-size: 100%;
+                background-size: 585px;
+                background-position: top right;
+               
+            }
+
+            .bnr-contnt{
+                color: $white;
+                h2{
+                    font-size: 62px;
+                    font-weight: 700;
+                    line-height: 68px;
+                    span{
+                        margin-top: 50px;
+                        display: block;
+                        em{
+                            font-style: normal;
+                            color: $greendark;
+                        }
+                    }
+                }
+                p{
+                    font-size: 25px;
+                    line-height: 32px;
+                    padding-right: 275px;
+                    margin: 20px 0;
+                }
+
+                .btloff-price{
+                    position: relative;
+                    padding-left: 20px;
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: -6px;
+                        width: 9px;
+                        height:73%;
+                        background: $white;
+                    }
+
+                    p{
+                        font-size: 28px;
+                        font-weight: 500;
+                        margin: 0;
+                    }
+                    h3{
+                       
+                        sub{
+                            font-size: 35px;
+                            font-weight: 700;
+                            display: block;
+                            margin-bottom: 40px;
+                        }
+                        p{
+                        font-size: 60px;
+                        line-height: 65px;
+                        font-weight: 700;
+                        margin-bottom: 0;
+                        i{
+                            font-style: normal;
+                            font-size: 35px;
+                            vertical-align: middle;
+                            position: relative;
+                            top: -2px;
+                            &:after{
+                                content: '';
+                                position: absolute;
+                                top: 48%;
+                                left: 5px;
+                                width: 90%;
+                                height:3px;
+                                background: $greendark;
+                            }
+                        }
+                        }
+                    }
+                }
             }
 
             .bnr-img-wrp{
                 position: relative;
                 z-index: 1;
+                right: 0;
+                figure{
+                    margin: 0;
+                    position: relative;
+                    .limit-stock{
+                        width: 135px;
+                        height: 135px;
+                        text-align: center;
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                        background: $white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        margin-top: -99px;
+                        right: -36px;
+                        p{
+                            margin: 0;
+                            font-size: 22px;
+                            line-height: 24px;
+                            color: $dark-red;
+                            font-weight: 800;
+                            &:after{
+                                content: "";
+                                position: absolute;
+                                width: 20px;
+                                height: 20px;
+                                background: $yellowcolor;
+                                border-radius: 50%;
+                                -webkit-border-radius: 50%;
+                                -moz-border-radius: 50%;
+                                -ms-border-radius: 50%;
+                                -o-border-radius: 50%;
+                                left: 20px;
+                                bottom: 3px;
+                        }
+
+                        
+                        }
+
+                        
+                    }
+                }
+
+                .yellow-flwer{
+                            position: relative;
+                            top: -185px;
+                            width: 235px;
+                            right: -173px;
+                        }
+            }
+
+            .btn{
+                display: inline-block;
+                padding: 8px 40px;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+                background:$greendark;
+                color: $white;
+                font-weight: 600;
+                font-weight: 600;
+                font-size: 20px;
+                margin-top: 10px;
             }
         }
     }
+
+    section{
+        padding: 60px 0 ;
+    }
+
+    // groundbreak section
+
+        .spl-hding{
+            margin: 0;
+            padding: 5px 100px;
+            background: $darkgrey;
+            color: $white;
+            font-weight: 600;
+            display: table;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+        }  
+
+        .discvr-img-glry{
+            list-style: none;
+            display:flex;
+            align-items: stretch;
+            padding: 0;
+            margin: 35px 0;
+            li{
+                margin-right: 20px;
+                width: 30%;
+                height: 218px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .sectitl{
+            font-size: 55px;
+            line-height: 60px;
+            font-weight: 700;
+            color: $darkgrey;
+            span{
+                font-size: 40px;
+                display: block;
+                color: $bluecolor;
+            }
+        }
+
+        .ground-discvr-sec{
+            position: relative;
+            overflow: hidden;
+            p{
+                font-size: 18px;
+                line-height: 30px;
+                color: $darkgrey;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+
+            .bgimg{
+                position: absolute;
+                bottom: -82px;
+                left: -100px;
+                width:365px;
+                height:365px;
+            }
+
+
+        }
+
+        // introduce section
+
+        .introduc-sec{
+            background: $bluecolor;
+            padding: 55px 0;
+            color: $white;
+
+            .ingrdnt-img-wrp{
+                position: relative;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    width: 305px;
+                    height: 57px;
+                    background: url(../images/shadow.png) no-repeat;
+                    background-size: cover;
+                    bottom: 28px;
+                    left: 68px;
+                }
+                img{
+                width: 62%;
+                margin: 0 auto;
+                display: table;
+                position: relative;
+                
+                }
+               
+            }
+            h4{
+                color:$greencolor;
+                font-size: 28px;
+                font-weight: 700;
+                margin-bottom: 30px;
+            }
+            h5{
+                font-size: 22px;
+                line-height: 30px;
+                margin-bottom: 50px;
+                font-weight: 700;
+            }
+            p{
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 20px;
+                font-weight: 300;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
 }
+
+
+
+
 
 
 
