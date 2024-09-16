@@ -82,6 +82,38 @@ h6 {
   z-index: -1;
 }
 
+/* =====prepare-your-order===== */
+.prepare-your-order {
+  padding-top: 10%;
+}
+.prepare-your-order .left-img {
+  position: relative;
+  text-align: center;
+}
+.prepare-your-order .left-img .background-text {
+  position: absolute;
+  color: #dddcda;
+  font-family: "Inter", sans-serif;
+  font-size: 166px;
+  text-align: center;
+  padding-left: 92px;
+  z-index: -1;
+  letter-spacing: 39px;
+}
+.prepare-your-order .left-img img {
+  width: 42%;
+  padding-top: 66px;
+}
+.prepare-your-order p {
+  font-weight: bold;
+  font-size: 49px;
+  font-family: "Open Sans", sans-serif;
+  color: #3C3C3B;
+}
+.prepare-your-order p span {
+  color: #003F6C;
+}
+
 @media (max-width: 991.5px) {
   .hero-section .capsule {
     font-size: 20px;

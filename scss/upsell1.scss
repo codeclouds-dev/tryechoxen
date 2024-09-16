@@ -87,7 +87,41 @@ h6 {
     }
 }
 
+/* =====prepare-your-order===== */
 
+.prepare-your-order {
+    padding-top: 10%;
+
+    .left-img {
+        position: relative;
+        text-align: center;
+
+        .background-text {
+            position: absolute;
+            color: $backText;
+            font-family: $interfont;
+            font-size: 166px;
+            text-align: center;
+            padding-left: 92px;
+            z-index: -1;
+            letter-spacing: 39px;
+        }
+
+        img {
+            width: 42%;
+            padding-top: 66px;
+        }
+    }
+    p{
+        font-weight: bold;
+        font-size: 49px;
+        font-family: $openSans;
+        color: $textDark;
+        span{
+            color: $contentBlue;
+        }
+    }
+}
 
 
 
