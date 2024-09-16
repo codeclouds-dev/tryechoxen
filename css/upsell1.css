@@ -1,8 +1,140 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+/* ====Hero Section==== */
+.hero-section {
+  padding-top: 5rem;
+  position: relative;
+}
+.hero-section .capsule {
+  background-color: #FAF9F8;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #3C3C3B;
+  position: relative;
+  z-index: 1;
+}
+.hero-section .capsule .green-capsule {
+  background-color: #5F9D17;
+  height: 100px;
+  border-radius: 50px;
+  display: grid;
+  place-content: center;
+  color: #fff;
+}
+.hero-section .content {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #003F6C;
+  color: #fff;
+  padding: 5rem 1rem 1rem 1rem;
+  position: relative;
+  margin-top: -3rem;
+  width: 99%;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+.hero-section .content h3 {
+  font-size: 54px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+}
+.hero-section .content p {
+  font-size: 39px;
+  font-family: "Open Sans", sans-serif;
+  padding: 0rem 10rem 5rem 10rem;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+.hero-section .bg-leaf {
+  width: 30%;
+  position: absolute;
+  overflow: hidden;
+  right: 0;
+  bottom: -5rem;
+  z-index: -1;
+}
+
+@media (max-width: 991.5px) {
+  .hero-section .capsule {
+    font-size: 20px;
+  }
+  .hero-section .content h3 {
+    font-size: 38px;
+  }
+  .hero-section .content p {
+    padding: 0rem 4rem 3rem 4rem;
+  }
+}
+@media (max-width: 767.5px) {
+  .hero-section .capsule {
+    font-size: 16px;
+    height: 75px;
+  }
+  .hero-section .capsule .green-capsule {
+    height: 75px;
+  }
+  .hero-section .content h3 {
+    font-size: 30px;
+  }
+  .hero-section .content p {
+    font-size: 25px;
+  }
+  .hero-section .bg-leaf {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .hero-section .capsule {
+    font-size: 13px;
+    height: 75px;
+  }
+  .hero-section .content h3 {
+    font-size: 24px;
+    padding-bottom: 2rem;
+  }
+  .hero-section .content p {
+    font-size: 21px;
+    padding: 0rem 2rem 3rem 2rem;
+  }
+}
+@media (max-width: 390px) {
+  .hero-section .content {
+    padding: 5rem 0rem 1rem 0rem;
+  }
+  .hero-section .content h3 {
+    font-size: 20px;
+    padding-bottom: 2rem;
+  }
+  .hero-section .content p {
+    font-size: 20px;
+    padding: 0rem 1rem 3rem 1rem;
+  }
 }/*# sourceMappingURL=upsell1.css.map */
