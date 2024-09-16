@@ -21,21 +21,80 @@ body {
 .homepage header {
   position: relative;
   background: #03508B;
+  padding: 45px 0;
 }
 .homepage header .logo {
+  position: absolute;
+  left: 0;
+  top: 0;
   margin: 0;
   width: 225px;
-  height: 154px;
-  border-radius: 0 15px 15px 0;
-  -webkit-border-radius: 0 15px 15px 0;
-  -moz-border-radius: 0 15px 15px 0;
-  -ms-border-radius: 0 15px 15px 0;
-  -o-border-radius: 0 15px 15px 0;
+  height: 125px;
+  border-radius: 0 0px 15px 0;
+  -webkit-border-radius: 0 0px 15px 0;
+  -moz-border-radius: 0 0px 15px 0;
+  -ms-border-radius: 0 0px 15px 0;
+  -o-border-radius: 0 0px 15px 0;
   position: absolute;
   background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .homepage header .logo img {
-  width: 200px;
+  width: 145px;
+}
+.homepage header .nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.homepage header .nav li {
+  margin-right: 48px;
+}
+.homepage header .nav li:last-child {
+  margin-right: 0;
+}
+.homepage header .nav li a {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+.homepage header .nav li a.ordr-btn {
+  font-size: 26px;
+  font-weight: 600;
+  display: block;
+  color: #fff;
+  width: 210px;
+  padding: 10px 10px;
+  text-align: center;
+  background: #5F9D17;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.homepage .herobanner {
+  background: #03508B;
+}
+.homepage .herobanner .banner-wrpr {
+  position: relative;
+}
+.homepage .herobanner .banner-wrpr:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 600px;
+  height: 600px;
+  background: url(../images/banner-bg-gredient.png) no-repeat;
+  background-size: 100%;
+}
+.homepage .herobanner .banner-wrpr .bnr-img-wrp {
+  position: relative;
+  z-index: 1;
 }
 
 .upsellpage .container {
