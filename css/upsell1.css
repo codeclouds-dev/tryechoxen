@@ -88,6 +88,7 @@ h6 {
   padding-top: 10%;
   background-color: #FAF9F8;
   margin-top: 5rem;
+  position: relative;
 }
 .prepare-your-order .left-img {
   text-align: center;
@@ -122,6 +123,68 @@ h6 {
   font-family: "Open Sans", sans-serif;
   padding-top: 10%;
   padding-left: 20%;
+}
+.prepare-your-order .bg-leaf {
+  width: 24%;
+  position: absolute;
+  overflow: hidden;
+  right: 0;
+  bottom: 0rem;
+  z-index: 1;
+}
+
+/* ======take-advantage====== */
+.take-advantage {
+  background-color: #00518C;
+  padding-top: 5rem;
+}
+.take-advantage h3 {
+  background-color: #F40C1E;
+  color: #fff;
+  font-size: 39px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 9px;
+  padding: 1rem 2rem;
+}
+.take-advantage .leftarea {
+  max-width: 490px;
+}
+.take-advantage .leftarea h4 {
+  color: #fff;
+  font-size: 47px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-top: 3rem;
+  line-height: 65px;
+}
+.take-advantage .leftarea h4 span {
+  display: block;
+  font-weight: 650;
+}
+.take-advantage .leftarea h4 span b {
+  font-size: 100px;
+  font-weight: 650;
+  padding-right: 1rem;
+  line-height: 7rem;
+}
+.take-advantage .leftarea h4 s {
+  text-decoration-color: red;
+}
+.take-advantage button {
+  background: #5F9D17;
+  color: #fff;
+  border-radius: 35px;
+  padding: 1rem 3rem;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  font-size: 24px;
+  width: 600px;
+  margin-top: 4rem;
+  cursor: pointer;
 }
 
 @media (max-width: 1180px) {
