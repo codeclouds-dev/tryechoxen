@@ -19,8 +19,9 @@ h6 {
 
 /* ====Hero Section==== */
 .hero-section {
-    padding-top: 5rem;
+    // padding-top: 5rem;
     position: relative;
+    padding: 5rem 10rem 0 10rem;
 
     .capsule {
         background-color: $capsuleWhite;
@@ -51,8 +52,9 @@ h6 {
         text-align: center;
         margin: 0 auto;
         width: 100%;
-        background-color: #003F6C;
-        color: #fff;
+        background-color: $contentBlue;
+        color: $white;
+        border: 5px solid $white;
         padding: 5rem 1rem 1rem 1rem;
         position: relative;
         margin-top: -3rem;
@@ -91,34 +93,55 @@ h6 {
 
 .prepare-your-order {
     padding-top: 10%;
+    background-color: #FAF9F8;
+    margin-top: 5rem;
 
     .left-img {
-        position: relative;
+
         text-align: center;
 
         .background-text {
-            position: absolute;
+            position: relative;
             color: $backText;
             font-family: $interfont;
             font-size: 166px;
             text-align: center;
-            padding-left: 92px;
-            z-index: -1;
+            // padding-left: 92px;
+            // z-index: -1;
             letter-spacing: 39px;
         }
 
         img {
-            width: 42%;
-            padding-top: 66px;
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 160px;
+            transform: translate(-66%, -50%);
+
         }
     }
-    p{
-        font-weight: bold;
-        font-size: 49px;
-        font-family: $openSans;
-        color: $textDark;
-        span{
-            color: $contentBlue;
+
+    .content-area {
+        & p {
+            font-weight: bold;
+            font-size: 43px;
+            font-family: $openSans;
+            color: $textDark;
+
+            span {
+                color: $contentBlue;
+            }
+        }
+
+        & .small-text {
+            font-size: 14px;
+            font-weight: 400;
+            font-family: $openSans;
+
+            padding-top: 10%;
+            padding-left: 20%;
+
         }
     }
 }

@@ -20,8 +20,8 @@ h6 {
 
 /* ====Hero Section==== */
 .hero-section {
-  padding-top: 5rem;
   position: relative;
+  padding: 5rem 10rem 0 10rem;
 }
 .hero-section .capsule {
   background-color: #FAF9F8;
@@ -52,6 +52,7 @@ h6 {
   width: 100%;
   background-color: #003F6C;
   color: #fff;
+  border: 5px solid #fff;
   padding: 5rem 1rem 1rem 1rem;
   position: relative;
   margin-top: -3rem;
@@ -85,36 +86,56 @@ h6 {
 /* =====prepare-your-order===== */
 .prepare-your-order {
   padding-top: 10%;
+  background-color: #FAF9F8;
+  margin-top: 5rem;
 }
 .prepare-your-order .left-img {
-  position: relative;
   text-align: center;
 }
 .prepare-your-order .left-img .background-text {
-  position: absolute;
+  position: relative;
   color: #dddcda;
   font-family: "Inter", sans-serif;
   font-size: 166px;
   text-align: center;
-  padding-left: 92px;
-  z-index: -1;
   letter-spacing: 39px;
 }
 .prepare-your-order .left-img img {
-  width: 42%;
-  padding-top: 66px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 160px;
+  transform: translate(-66%, -50%);
 }
-.prepare-your-order p {
+.prepare-your-order .content-area p {
   font-weight: bold;
-  font-size: 49px;
+  font-size: 43px;
   font-family: "Open Sans", sans-serif;
   color: #3C3C3B;
 }
-.prepare-your-order p span {
+.prepare-your-order .content-area p span {
   color: #003F6C;
 }
+.prepare-your-order .content-area .small-text {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 10%;
+  padding-left: 20%;
+}
 
+@media (max-width: 1180px) {
+  .hero-section {
+    padding: 5rem 5rem 0 5rem;
+  }
+  .prepare-your-order .content-area p {
+    font-size: 41px;
+  }
+}
 @media (max-width: 991.5px) {
+  .hero-section {
+    padding: 5rem 3rem 0 3rem;
+  }
   .hero-section .capsule {
     font-size: 20px;
   }
@@ -123,6 +144,12 @@ h6 {
   }
   .hero-section .content p {
     padding: 0rem 4rem 3rem 4rem;
+  }
+  .prepare-your-order .content-area p {
+    font-size: 34px;
+  }
+  .prepare-your-order .content-area .small-text {
+    padding-left: 0;
   }
 }
 @media (max-width: 767.5px) {
@@ -156,6 +183,17 @@ h6 {
     font-size: 21px;
     padding: 0rem 2rem 3rem 2rem;
   }
+  .prepare-your-order .content-area p {
+    font-size: 30px;
+  }
+  .prepare-your-order .left-img .background-text {
+    position: relative;
+    color: #dddcda;
+    font-family: "Inter", sans-serif;
+    font-size: 140px;
+    text-align: center;
+    letter-spacing: 39px;
+  }
 }
 @media (max-width: 390px) {
   .hero-section .content {
@@ -168,5 +206,12 @@ h6 {
   .hero-section .content p {
     font-size: 20px;
     padding: 0rem 1rem 3rem 1rem;
+  }
+  .prepare-your-order .left-img .background-text {
+    font-size: 135px;
+    letter-spacing: 12px;
+  }
+  .prepare-your-order .content-area p {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=upsell1.css.map */

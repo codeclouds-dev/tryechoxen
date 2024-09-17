@@ -1,6 +1,22 @@
+@media (max-width:1180px) {
+    .hero-section {
+        padding: 5rem 5rem 0 5rem;
+    }
+
+    .prepare-your-order {
+        .content-area {
+            p {
+
+                font-size: 41px;
+            }
+        }
+    }
+}
 
 @media (max-width:991.5px) {
     .hero-section {
+        padding: 5rem 3rem 0 3rem;
+
         .capsule {
             font-size: 20px;
         }
@@ -16,6 +32,20 @@
             }
         }
     }
+
+    .prepare-your-order {
+        .content-area {
+            p {
+                font-size: 34px;
+            }
+
+            & .small-text {
+
+                padding-left: 0;
+            }
+        }
+    }
+
 }
 
 @media (max-width:767.5px) {
@@ -64,6 +94,25 @@
             }
         }
     }
+
+    .prepare-your-order {
+        .content-area {
+            p {
+                font-size: 30px;
+            }
+        }
+
+        .left-img {
+            .background-text {
+                position: relative;
+                color: #dddcda;
+                font-family: "Inter", sans-serif;
+                font-size: 140px;
+                text-align: center;
+                letter-spacing: 39px;
+            }
+        }
+    }
 }
 
 @media (max-width:390px) {
@@ -75,9 +124,28 @@
                 font-size: 20px;
                 padding-bottom: 2rem;
             }
+
             p {
                 font-size: 20px;
                 padding: 0rem 1rem 3rem 1rem;
+            }
+        }
+    }
+
+    .prepare-your-order {
+        .left-img {
+
+            .background-text {
+
+                font-size: 135px;
+
+                letter-spacing: 12px;
+            }
+        }
+
+        .content-area {
+            p {
+                font-size: 20px;
             }
         }
     }
