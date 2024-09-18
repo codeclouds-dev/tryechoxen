@@ -163,6 +163,7 @@ h6 {
     padding-top: 3em;
     min-height: 767px;
     overflow: hidden;
+    position: relative;
 
     h3 {
         background-color: $redBg;
@@ -261,7 +262,7 @@ h6 {
 
     }
 
-    .saving-img  {
+    .saving-img {
         position: absolute;
         bottom: -79px;
         width: 45%;
@@ -271,14 +272,29 @@ h6 {
         place-items: center;
         color: $white;
         font-weight: 600;
-        p{
-                font-size: 32px;
-                line-height: 39px;
-                margin-top: -28px;
-                text-align: center;
+
+        p {
+            font-size: 32px;
+            line-height: 39px;
+            margin-top: -28px;
+            text-align: center;
         }
     }
-}
+
+    .bubbleimg {
+        & .bubbleimg1 {
+            position: absolute;
+            bottom: -17rem;
+            left: 17%;
+        }
+        & .bubbleimg2{   
+                position: absolute;
+                left: 8rem;
+                bottom: 4rem;
+            }
+        }
+    }
+
 
 
 

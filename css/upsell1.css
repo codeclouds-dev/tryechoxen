@@ -139,6 +139,7 @@ h6 {
   padding-top: 3em;
   min-height: 767px;
   overflow: hidden;
+  position: relative;
 }
 .take-advantage h3 {
   background-color: #F40C1E;
@@ -238,6 +239,16 @@ h6 {
   line-height: 39px;
   margin-top: -28px;
   text-align: center;
+}
+.take-advantage .bubbleimg .bubbleimg1 {
+  position: absolute;
+  bottom: -17rem;
+  left: 17%;
+}
+.take-advantage .bubbleimg .bubbleimg2 {
+  position: absolute;
+  left: 8rem;
+  bottom: 4rem;
 }
 
 @media (max-width: 1180px) {
