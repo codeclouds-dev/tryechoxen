@@ -364,8 +364,29 @@ h6 {
 
 
 
+/* ======risk-free====== */
+.risk-free {
+    padding-top: 5rem;
 
+    .heading {
 
+        margin: 0 auto;
+        text-align: center;
+
+        h3 {
+            font-size: 40px;
+            color: $textDark;
+            font-weight: 650;
+            font-family: $openSans;
+        }
+
+        p {
+            font-size: 18px;
+            color: $textDark;
+            padding: 2rem 14rem;
+        }
+    }
+}
 
 
 

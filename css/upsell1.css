@@ -309,6 +309,26 @@ h6 {
   z-index: 1;
 }
 
+/* ======risk-free====== */
+.risk-free {
+  padding-top: 5rem;
+}
+.risk-free .heading {
+  margin: 0 auto;
+  text-align: center;
+}
+.risk-free .heading h3 {
+  font-size: 40px;
+  color: #3C3C3B;
+  font-weight: 650;
+  font-family: "Open Sans", sans-serif;
+}
+.risk-free .heading p {
+  font-size: 18px;
+  color: #3C3C3B;
+  padding: 2rem 14rem;
+}
+
 @media (max-width: 1180px) {
   .hero-section {
     padding: 5rem 5rem 0 5rem;
