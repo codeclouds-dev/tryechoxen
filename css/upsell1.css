@@ -136,7 +136,9 @@ h6 {
 /* ======take-advantage====== */
 .take-advantage {
   background-color: #00518C;
-  padding-top: 5rem;
+  padding-top: 3em;
+  min-height: 767px;
+  overflow: hidden;
 }
 .take-advantage h3 {
   background-color: #F40C1E;
@@ -153,7 +155,7 @@ h6 {
 }
 .take-advantage .leftarea h4 {
   color: #fff;
-  font-size: 47px;
+  font-size: 44px;
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   font-weight: 400;
@@ -180,11 +182,62 @@ h6 {
   padding: 1rem 3rem;
   outline: none;
   border: none;
-  font-weight: 700;
-  font-size: 24px;
-  width: 600px;
+  font-weight: 600;
+  font-size: 21px;
+  width: 500px;
   margin-top: 4rem;
   cursor: pointer;
+}
+.take-advantage .right-design {
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding-top: 10%;
+}
+.take-advantage .right-design * {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+}
+.take-advantage .right-design .bg-vector {
+  width: 90%;
+  padding-right: -10px;
+  margin-right: 41px;
+  margin-top: 40px;
+}
+.take-advantage .right-design .main-img {
+  width: 80%;
+}
+.take-advantage .right-design .free_batch {
+  width: 25%;
+  position: absolute;
+  left: -17px;
+  top: 0;
+}
+.take-advantage .right-design .small-circle {
+  content: "";
+  position: absolute;
+  width: 50px;
+  aspect-ratio: 1;
+  background: #5F9D17;
+  border-radius: 50%;
+  left: -19px;
+  top: 170px;
+}
+.take-advantage .saving-img {
+  position: absolute;
+  bottom: -79px;
+  width: 45%;
+  right: 0;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-weight: 600;
+}
+.take-advantage .saving-img p {
+  font-size: 32px;
+  line-height: 39px;
+  margin-top: -28px;
+  text-align: center;
 }
 
 @media (max-width: 1180px) {
@@ -193,6 +246,31 @@ h6 {
   }
   .prepare-your-order .content-area p {
     font-size: 41px;
+  }
+  .take-advantage {
+    min-height: 700px;
+  }
+  .take-advantage h3 {
+    font-size: 32px;
+  }
+  .take-advantage .leftarea h4 {
+    font-size: 37px;
+  }
+  .take-advantage .right-design .free_batch {
+    width: 25%;
+    position: absolute;
+    left: -25px;
+    top: 10px;
+  }
+  .take-advantage .saving-img p {
+    font-size: 26px;
+    line-height: 39px;
+    margin-top: -9px;
+    text-align: center;
+  }
+  .take-advantage button {
+    width: 450px;
+    font-size: 19px;
   }
 }
 @media (max-width: 991.5px) {
@@ -208,11 +286,26 @@ h6 {
   .hero-section .content p {
     padding: 0rem 4rem 3rem 4rem;
   }
+  .prepare-your-order .content-area {
+    padding-bottom: 4rem;
+  }
   .prepare-your-order .content-area p {
     font-size: 34px;
   }
   .prepare-your-order .content-area .small-text {
     padding-left: 0;
+  }
+  .take-advantage h3 {
+    font-size: 23px;
+  }
+  .take-advantage .leftarea h4 {
+    font-size: 27px;
+    line-height: 34px;
+  }
+  .take-advantage .leftarea h4 span b {
+    font-size: 81px;
+    line-height: 6rem;
+    padding-right: 0;
   }
 }
 @media (max-width: 767.5px) {

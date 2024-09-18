@@ -160,7 +160,9 @@ h6 {
 /* ======take-advantage====== */
 .take-advantage {
     background-color: $bgBlue;
-    padding-top: 5rem;
+    padding-top: 3em;
+    min-height: 767px;
+    overflow: hidden;
 
     h3 {
         background-color: $redBg;
@@ -178,7 +180,7 @@ h6 {
 
         h4 {
             color: $white;
-            font-size: 47px;
+            font-size: 44px;
             font-family: $openSans;
             text-transform: uppercase;
             font-weight: 400;
@@ -202,18 +204,79 @@ h6 {
             }
         }
     }
-    button{
+
+    button {
         background: $greencolor;
         color: $white;
         border-radius: 35px;
         padding: 1rem 3rem;
         outline: none;
         border: none;
-        font-weight: 700;
-        font-size: 24px;
-        width: 600px;
+        font-weight: 600;
+        font-size: 21px;
+        width: 500px;
         margin-top: 4rem;
         cursor: pointer;
+    }
+
+    .right-design {
+        position: relative;
+        display: grid;
+        place-items: center;
+        padding-top: 10%;
+
+        & * {
+            grid-column: 1/-1;
+            grid-row: 1/-1;
+        }
+
+        & .bg-vector {
+            width: 90%;
+            padding-right: -10px;
+            margin-right: 41px;
+            margin-top: 40px;
+        }
+
+        & .main-img {
+            width: 80%;
+        }
+
+        .free_batch {
+            width: 25%;
+            position: absolute;
+            left: -17px;
+            top: 0;
+        }
+
+        .small-circle {
+            content: "";
+            position: absolute;
+            width: 50px;
+            aspect-ratio: 1;
+            background: $greencolor;
+            border-radius: 50%;
+            left: -19px;
+            top: 170px;
+        }
+
+    }
+
+    .saving-img  {
+        position: absolute;
+        bottom: -79px;
+        width: 45%;
+        right: 0;
+
+        display: grid;
+        place-items: center;
+        color: $white;
+        font-weight: 600;
+        p{
+                font-size: 32px;
+                line-height: 39px;
+                margin-top: -28px;
+                text-align: center;
+        }
     }
 }
 
