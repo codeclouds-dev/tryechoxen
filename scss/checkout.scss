@@ -1,5 +1,6 @@
 @import "./color.scss";
 @import "./font.scss";
+@import "./responsive.scss";
 
 * {
     padding: 0;
@@ -95,18 +96,35 @@ nav {
             }
         }
 
-        select {
+        .position-relative {
 
+            position: relative;
 
-            &::before {
+            .select-state,
+            .select-city {
+
                 content: "";
-                background-image: url("../images/drop.png");
+                background: url("../images/drop.png");
                 width: 30px;
                 height: 30px;
-                background: green;
                 display: block;
+                background-repeat: no-repeat;
+
+
+
+                position: absolute;
+                right: -4px;
+                top: 12px;
+
+
+
+            }
+
+            .select-state {
+                left: 44%;
             }
         }
+
 
         .cardDetails {
             font-style: 17px;
@@ -211,30 +229,35 @@ nav {
     }
 
 }
-.checkout-footer{
+
+.checkout-footer {
     background-color: #00518C;
     padding: 2rem 0;
     color: white;
-    h6{
+
+    h6 {
         font-size: 20px;
         color: $white;
         padding-bottom: 1rem;
     }
-    ul{
+
+    ul {
         padding-left: 0;
         list-style: none;
-   
+
         color: #ffff;
-        li{
+
+        li {
             padding-bottom: 0.5rem;
-           
-            a{
+
+            a {
                 color: #fff;
                 text-decoration: none;
             }
         }
     }
-    a{
+
+    a {
         text-decoration: none;
         color: #fff;
     }

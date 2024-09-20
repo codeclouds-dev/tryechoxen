@@ -2,6 +2,154 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@media (max-width: 1180px) {
+  .hero-section {
+    padding: 5rem 5rem 0 5rem;
+  }
+  .prepare-your-order .content-area p {
+    font-size: 41px;
+  }
+  .take-advantage {
+    min-height: 700px;
+  }
+  .take-advantage h3 {
+    font-size: 32px;
+  }
+  .take-advantage .leftarea h4 {
+    font-size: 37px;
+  }
+  .take-advantage .right-design .free_batch {
+    width: 25%;
+    position: absolute;
+    left: -25px;
+    top: 10px;
+  }
+  .take-advantage .saving-img p {
+    font-size: 26px;
+    line-height: 39px;
+    margin-top: -9px;
+    text-align: center;
+  }
+  .take-advantage button {
+    width: 450px;
+    font-size: 19px;
+  }
+}
+@media (max-width: 991.5px) {
+  .hero-section {
+    padding: 5rem 3rem 0 3rem;
+  }
+  .hero-section .capsule {
+    font-size: 20px;
+  }
+  .hero-section .content h3 {
+    font-size: 38px;
+  }
+  .hero-section .content p {
+    padding: 0rem 4rem 3rem 4rem;
+  }
+  .prepare-your-order .content-area {
+    padding-bottom: 4rem;
+  }
+  .prepare-your-order .content-area p {
+    font-size: 34px;
+  }
+  .prepare-your-order .content-area .small-text {
+    padding-left: 0;
+  }
+  .take-advantage h3 {
+    font-size: 23px;
+  }
+  .take-advantage .leftarea h4 {
+    font-size: 27px;
+    line-height: 34px;
+  }
+  .take-advantage .leftarea h4 span b {
+    font-size: 81px;
+    line-height: 6rem;
+    padding-right: 0;
+  }
+}
+@media (max-width: 767.5px) {
+  .hero-section .capsule {
+    font-size: 16px;
+    height: 75px;
+  }
+  .hero-section .capsule .green-capsule {
+    height: 75px;
+  }
+  .hero-section .content h3 {
+    font-size: 30px;
+  }
+  .hero-section .content p {
+    font-size: 25px;
+  }
+  .hero-section .bg-leaf {
+    width: 50%;
+  }
+  /*======== CheckOut Page ======*/
+  .checkout-container .order-details .shipping-insurance {
+    text-align: center;
+  }
+  .checkout-footer .checkout-container .row {
+    text-align: center;
+  }
+  .checkout-footer .checkout-container .row .getintouch {
+    padding-top: 3rem !important;
+  }
+}
+@media (max-width: 500px) {
+  .hero-section .capsule {
+    font-size: 13px;
+    height: 75px;
+  }
+  .hero-section .content h3 {
+    font-size: 24px;
+    padding-bottom: 2rem;
+  }
+  .hero-section .content p {
+    font-size: 21px;
+    padding: 0rem 2rem 3rem 2rem;
+  }
+  .prepare-your-order .content-area p {
+    font-size: 30px;
+  }
+  .prepare-your-order .left-img .background-text {
+    position: relative;
+    color: #dddcda;
+    font-family: "Inter", sans-serif;
+    font-size: 140px;
+    text-align: center;
+    letter-spacing: 39px;
+  }
+  /*======== CheckOut Page ======*/
+  .logoResponsive {
+    width: 100%;
+    object-fit: none;
+    padding-top: 0px;
+    height: 80px;
+  }
+}
+@media (max-width: 390px) {
+  .hero-section .content {
+    padding: 5rem 0rem 1rem 0rem;
+  }
+  .hero-section .content h3 {
+    font-size: 20px;
+    padding-bottom: 2rem;
+  }
+  .hero-section .content p {
+    font-size: 20px;
+    padding: 0rem 1rem 3rem 1rem;
+  }
+  .prepare-your-order .left-img .background-text {
+    font-size: 135px;
+    letter-spacing: 12px;
+  }
+  .prepare-your-order .content-area p {
+    font-size: 20px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -86,13 +234,23 @@ nav .navbar .btls {
 .checkout-container .payement-details .form-control:focus {
   box-shadow: none;
 }
-.checkout-container .payement-details select::before {
+.checkout-container .payement-details .position-relative {
+  position: relative;
+}
+.checkout-container .payement-details .position-relative .select-state,
+.checkout-container .payement-details .position-relative .select-city {
   content: "";
-  background-image: url("../images/drop.png");
+  background: url("../images/drop.png");
   width: 30px;
   height: 30px;
-  background: green;
   display: block;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -4px;
+  top: 12px;
+}
+.checkout-container .payement-details .position-relative .select-state {
+  left: 44%;
 }
 .checkout-container .payement-details .cardDetails {
   font-style: 17px;

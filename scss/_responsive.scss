@@ -140,7 +140,26 @@
         }
     }
 
+/*======== CheckOut Page ======*/
+    .checkout-container {
+        .order-details {
+            .shipping-insurance {
+                text-align: center;
+            }
+        }
+    }
 
+    .checkout-footer {
+        .checkout-container {
+            .row {
+                text-align: center;
+
+                .getintouch {
+                    padding-top: 3rem !important;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width:500px) {
@@ -180,6 +199,14 @@
                 letter-spacing: 39px;
             }
         }
+    }
+    
+/*======== CheckOut Page ======*/
+    .logoResponsive {
+        width: 100%;
+        object-fit: none;
+        padding-top: 0px;
+        height: 80px;
     }
 }
 
