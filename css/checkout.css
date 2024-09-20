@@ -166,28 +166,30 @@ h6 {
   margin-bottom: 0;
 }
 
-/* =========Navbar========= */
-nav {
+.checkout-wrapper {
+  overflow: hidden;
+  /* =========Navbar========= */
+}
+.checkout-wrapper nav {
   box-shadow: 2px 3px 5px #eeeeee;
   padding-bottom: 1rem;
 }
-nav .navbar {
+.checkout-wrapper nav .navbar {
   background: #F2F9FF;
   max-width: 900px;
   margin: 0 auto;
 }
-nav .navbar img {
+.checkout-wrapper nav .navbar img {
   object-fit: contain;
 }
-nav .navbar .btls {
+.checkout-wrapper nav .navbar .btls {
   width: 150px;
 }
-
-.checkout-container {
+.checkout-wrapper .checkout-container {
   max-width: 900px;
   margin: 0 auto;
 }
-.checkout-container .secure-checkout {
+.checkout-wrapper .checkout-container .secure-checkout {
   font-size: 20px;
   font-weight: 600;
   text-align: center;
@@ -197,48 +199,48 @@ nav .navbar .btls {
   color: #212529;
   align-items: center;
 }
-.checkout-container .secure-checkout img {
+.checkout-wrapper .checkout-container .secure-checkout img {
   width: 30px;
   object-fit: 1;
   object-fit: contain;
 }
-.checkout-container .payement-details {
+.checkout-wrapper .checkout-container .payement-details {
   background-color: #F8F9FA;
   padding: 15px 10px;
   box-shadow: 2px 3px 5px silver;
   border-radius: 5px;
   padding-bottom: 2rem;
 }
-.checkout-container .payement-details .payment-method {
+.checkout-wrapper .checkout-container .payement-details .payment-method {
   font-family: "Roboto";
   font-size: 15px;
   font-weight: 600;
   padding-bottom: 7px;
   padding-left: 3px;
 }
-.checkout-container .payement-details .payment-option {
+.checkout-wrapper .checkout-container .payement-details .payment-option {
   background-color: transparent;
   border: 1px solid #CCCCCC;
   text-align: center;
   display: flex;
   align-items: center;
 }
-.checkout-container .payement-details .payment-option div {
+.checkout-wrapper .checkout-container .payement-details .payment-option div {
   width: 50%;
   padding: 0.5rem;
   cursor: pointer;
 }
-.checkout-container .payement-details .form-control {
+.checkout-wrapper .checkout-container .payement-details .form-control {
   margin: 0 3px;
 }
-.checkout-container .payement-details .form-control:focus {
+.checkout-wrapper .checkout-container .payement-details .form-control:focus {
   box-shadow: none;
 }
-.checkout-container .payement-details .position-relative {
+.checkout-wrapper .checkout-container .payement-details .position-relative {
   position: relative;
 }
-.checkout-container .payement-details .position-relative .select-state,
-.checkout-container .payement-details .position-relative .select-city {
+.checkout-wrapper .checkout-container .payement-details .position-relative .select-state,
+.checkout-wrapper .checkout-container .payement-details .position-relative .select-city {
   content: "";
   background: url("../images/drop.png");
   width: 30px;
@@ -249,19 +251,19 @@ nav .navbar .btls {
   right: -4px;
   top: 12px;
 }
-.checkout-container .payement-details .position-relative .select-state {
+.checkout-wrapper .checkout-container .payement-details .position-relative .select-state {
   left: 44%;
 }
-.checkout-container .payement-details .cardDetails {
+.checkout-wrapper .checkout-container .payement-details .cardDetails {
   font-style: 17px;
   font-weight: 600;
   font-family: "roboto";
 }
-.checkout-container .payement-details .cards {
+.checkout-wrapper .checkout-container .payement-details .cards {
   object-fit: contain;
   width: 50%;
 }
-.checkout-container .payement-details .btn-payment {
+.checkout-wrapper .checkout-container .payement-details .btn-payment {
   background-color: #2986B8;
   outline: none;
   border: none;
@@ -275,25 +277,25 @@ nav .navbar .btls {
   align-items: center;
   box-shadow: 2px 3px 4px silver;
 }
-.checkout-container .payement-details .btn-payment .bi-chevron-double-right {
+.checkout-wrapper .checkout-container .payement-details .btn-payment .bi-chevron-double-right {
   font-size: 10px;
 }
-.checkout-container .order-details .product-img p {
+.checkout-wrapper .checkout-container .order-details .product-img p {
   font-family: "roboto";
   font-size: 18px;
   font-weight: 600;
   color: #3C3C3B;
 }
-.checkout-container .order-details .shipping-insurance {
+.checkout-wrapper .checkout-container .order-details .shipping-insurance {
   box-shadow: 0px 1px 17px 1px #dedede;
   border-radius: 5px;
   padding: 1rem;
   font-style: italic;
 }
-.checkout-container .order-details .shipping-insurance p {
+.checkout-wrapper .checkout-container .order-details .shipping-insurance p {
   color: #3C3C3B;
 }
-.checkout-container .order-details .shipping-insurance .addmyorder {
+.checkout-wrapper .checkout-container .order-details .shipping-insurance .addmyorder {
   background-color: #FFC107;
   padding: 8px;
   margin-top: 4px;
@@ -301,66 +303,64 @@ nav .navbar .btls {
   font-style: normal;
   border-radius: 5px;
 }
-.checkout-container .order-details .pricing {
+.checkout-wrapper .checkout-container .order-details .pricing {
   list-style: none;
   padding-left: 0;
   padding-top: 4rem;
 }
-.checkout-container .order-details .pricing li {
+.checkout-wrapper .checkout-container .order-details .pricing li {
   padding: 0.7rem 0;
   border-bottom: 1px solid #DEE2E6;
   font-size: 15px;
 }
-.checkout-container .order-details .pricing .normal-price {
+.checkout-wrapper .checkout-container .order-details .pricing .normal-price {
   color: #DC3545;
   font-size: 20px;
   font-family: "roboto";
   font-weight: 500;
 }
-.checkout-container .order-details .pricing .total {
+.checkout-wrapper .checkout-container .order-details .pricing .total {
   font-size: 20px;
   font-weight: 500;
   color: #252529;
   border-bottom: none;
 }
-.checkout-container .gurantee {
+.checkout-wrapper .checkout-container .gurantee {
   color: #606060;
   font-size: 16px;
   padding-bottom: 3rem;
 }
-.checkout-container .gurantee b {
+.checkout-wrapper .checkout-container .gurantee b {
   text-transform: uppercase;
   font-style: 20px;
 }
-
-.checkout-footer {
+.checkout-wrapper .checkout-footer {
   background-color: #00518C;
   padding: 2rem 0;
   color: white;
 }
-.checkout-footer h6 {
+.checkout-wrapper .checkout-footer h6 {
   font-size: 20px;
   color: #fff;
   padding-bottom: 1rem;
 }
-.checkout-footer ul {
+.checkout-wrapper .checkout-footer ul {
   padding-left: 0;
   list-style: none;
   color: white;
 }
-.checkout-footer ul li {
+.checkout-wrapper .checkout-footer ul li {
   padding-bottom: 0.5rem;
 }
-.checkout-footer ul li a {
+.checkout-wrapper .checkout-footer ul li a {
   color: #fff;
   text-decoration: none;
 }
-.checkout-footer a {
+.checkout-wrapper .checkout-footer a {
   text-decoration: none;
   color: #fff;
 }
-
-.active {
+.checkout-wrapper .active {
   background-color: #2986B8;
   color: #fff;
 }/*# sourceMappingURL=checkout.css.map */

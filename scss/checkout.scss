@@ -18,6 +18,9 @@ h6 {
     margin-bottom: 0;
 }
 
+.checkout-wrapper{
+    overflow: hidden;
+
 /* =========Navbar========= */
 nav {
     box-shadow: 2px 3px 5px $boxshadow;
@@ -266,4 +269,6 @@ nav {
 .active {
     background-color: #2986B8;
     color: $white;
+}
+
 }
